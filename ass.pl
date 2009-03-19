@@ -2,8 +2,8 @@ use Net::LimeLight::Purge;
 use Net::LimeLight::Purge::Request;
 
 my $purge = Net::LimeLight::Purge->new(
-    username => 'magazines',
-    password => 'magcom325'
+    username => 'weee',
+    password => 'random'
 );
 # my $resp = $purge->get_all_purge_statuses(1);
 # 
