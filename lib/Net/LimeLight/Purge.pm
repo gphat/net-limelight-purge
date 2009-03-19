@@ -13,7 +13,7 @@ use Net::LimeLight::Purge::StatusResponse;
 
 =head1 NAME
 
-Net::LimeLight::Purge - The great new Net::LimeLight::Purge!
+Net::LimeLight::Purge - LimeLight Purge Service API
 
 =head1 VERSION
 
