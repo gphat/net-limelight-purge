@@ -25,14 +25,24 @@ our $VERSION = '0.01';
 
 =head1 SYNOPSIS
 
-Quick summary of what the module does.
+  use Net::LimeLight::Purge;
+  use Net::LimeLight::Purge::Request;
 
-Perhaps a little code snippet.
+  my $req = Net::LimeLight::Purge::Request->new(
+      shortname => 'mysite',
+      url => 'http://cdn.mysite.com/static/images/foo.jpg'
+  );
 
-    use Net::LimeLight::Purge;
-
-    my $foo = Net::LimeLight::Purge->new();
-    ...
+  my $purge = Net::LimeLight::Purge->new(
+      username => 'magazines',
+      password => 'magcom325'
+  );
+  my $ret = $puge->create_purge_request([ $req ]);
+  if($ret == -1) {
+      say "Something broke!";
+  } else {
+      say "Successful Request: $ret";
+  }
 
 =head1 METHODS
 
