@@ -7,8 +7,7 @@ license  'perl';
 
 build_requires 'Test::More';
 
-requires 'DateTime::Format::Strptime' => '1.0900';
-requires 'Digest::MD5';
+requires 'DateTime::Format::ISO8601' => '0.06';
 requires 'Moose' => '0.72';
 requires 'MooseX::AttributeHelpers' => '0.14';
 requires 'SOAP::Lite' => '0.710.08';

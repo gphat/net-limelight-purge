@@ -4,7 +4,6 @@ use warnings;
 use strict;
 
 use DateTime::Format::ISO8601;
-use Digest::MD5;
 use Moose;
 use SOAP::Lite +trace => 'debug';
 
