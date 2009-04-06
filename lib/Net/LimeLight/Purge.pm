@@ -32,7 +32,7 @@ our $VERSION = '0.02';
       username => 'luxuser',
       password => 'luxpass'
   );
-  my $ret = $puge->create_purge_request([ $req ]);
+  my $ret = $purge->create_purge_request([ $req ]);
   if($ret == -1) {
       say "Something broke!";
   } else {

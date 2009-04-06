@@ -1,5 +1,8 @@
 Revision history for Net-LimeLight-Purge
 
+0.03
+    - POD fix
+
 0.02
     - Small POD fixes
     - Take out SOAP debug flags
