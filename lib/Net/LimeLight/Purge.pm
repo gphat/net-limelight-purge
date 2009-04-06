@@ -173,6 +173,11 @@ The recipient to BCC the email to.
 sub create_purge_request {
     my ($self, $requests, $notification) = @_;
 
+    # If we are given nothing, do nothing.
+    if(!defined($requests) || (ref($requests) ne 'ARRAY') || (scalar(@{ $requests }) < 1)) {
+        return undef;
+    }
+
     # Set it to an empty hashref to save us some code.
     unless(defined($notification)) {
         $notification = {};

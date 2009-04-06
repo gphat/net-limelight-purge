@@ -2,6 +2,7 @@ Revision history for Net-LimeLight-Purge
 
 0.03
     - POD fix
+    - Gracefully handle being called with no requests
 
 0.02
     - Small POD fixes
