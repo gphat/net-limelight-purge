@@ -5,7 +5,7 @@ use strict;
 
 use DateTime::Format::ISO8601;
 use Moose;
-use SOAP::Lite +trace => 'debug';
+use SOAP::Lite;
 
 use Net::LimeLight::Purge::Request;
 use Net::LimeLight::Purge::StatusResponse;
@@ -14,13 +14,9 @@ use Net::LimeLight::Purge::StatusResponse;
 
 Net::LimeLight::Purge - LimeLight Purge Service API
 
-=head1 VERSION
-
-Version 0.01
-
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
@@ -33,8 +29,8 @@ our $VERSION = '0.01';
   );
 
   my $purge = Net::LimeLight::Purge->new(
-      username => 'magazines',
-      password => 'magcom325'
+      username => 'luxuser',
+      password => 'luxpass'
   );
   my $ret = $puge->create_purge_request([ $req ]);
   if($ret == -1) {

@@ -1,5 +1,9 @@
 Revision history for Net-LimeLight-Purge
 
+0.02
+    - Small POD fixes
+    - Take out SOAP debug flags
+
 0.01    2009-03-17
         First version, released on an unsuspecting world.
 
