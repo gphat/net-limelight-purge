@@ -17,3 +17,4 @@ META.yml
 README
 t/00-load.t
 t/01-simple.t
+t/02-empty.t
